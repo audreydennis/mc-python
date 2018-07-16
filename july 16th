@@ -19,3 +19,11 @@ def divide(p, q=1):
   else:
     return p/q
 print(divide(100))
+
+def median(a,b,c):
+  """median of three numbers"""
+  return a+b+c - min(a,b,c) - max(a,b,c)
+if median(3,3,3) == 3 and median(-1, 3, 2) == 2 and median(3,2,2) == 2:
+    print("Great work!")
+else:
+    print("Something went wrong!")
