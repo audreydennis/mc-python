@@ -1,0 +1,21 @@
+def four_sum(a,b,c,d):
+  """Give the sum of four numbers"""
+  return a+b+c+d
+
+if four_sum(-1, 0, 1, 9) == 9 and four_sum(0,0,0,0) == 0:
+    print("Great work!")
+else:
+    print("Something went wrong!")
+
+def triangular_number(n):
+  """Output the nth triangular number"""
+  return (n*(n+1))/2
+print( triangular_number( int(input("what is n"))))
+
+def divide(p, q=1):
+  """Return the division of two number"""
+  if q == 0:
+    print("STOP!")
+  else:
+    return p/q
+print(divide(100))
