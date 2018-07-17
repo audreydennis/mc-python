@@ -14,3 +14,10 @@ else:
 
 test_marks = [0,0,1,0,1,0,0,0,0,0,0,1,1]
 print( sum(test_marks)/len(test_marks))
+
+
+total=0 #sum of sqaures
+for i in range(int(input())):
+  total+= i*i
+
+print(total)
