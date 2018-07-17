@@ -1,1 +1,16 @@
 
+primes = [2,3,5,7,11,13,17,19,21,23,29]
+primes.remove(21)
+primes.append(31)
+print(primes)
+print(sum(primes))
+
+students = ["Yana","John","Andrew","Tara","George","Maxim","Devanshu","Max","Vishnu","Adrien","Audrey","Sophia","Joy","Lizette","Oskar","Will","Ethan"]
+if len(students) < 18:
+  students.append("dylan")
+  print(students)
+else:
+  print("dylan can't be added to the class")
+
+test_marks = [0,0,1,0,1,0,0,0,0,0,0,1,1]
+print( sum(test_marks)/len(test_marks))
