@@ -1,8 +1,16 @@
 students = ["Yana","John","Andrew","Tara","George","Maxim","Devanshu","Max","Vishnu","Adrien","Audrey","Sophia","Joy","Lizette","Oskar","Will","Ethan"]
+# first three names in alphebet
 print((sorted(students))[:3])
 
+# number of students with more than 6 letters
 total = 0
 for person in students:
   if len(person) >=6:
    total += 1
 print(total)
+
+# average letters in students name
+final = 0
+for person in students:
+ final += len(person)
+print(final/len(students))
