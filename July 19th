@@ -1,1 +1,26 @@
+for i in range(100):
+  if i%17 == 0:
+    print(i)
 
+for x in range(20):
+  for y in range(20):
+    #Solving for x,y in 17x + 11y = 21
+    if 17*x + 11*y == 211:
+      print(x,y)
+      break
+
+students = ["peter", "drake", "hannah", "mike", "elle", "vishnu"]
+students.remove("hannah")
+students.remove("elle")
+for person in students:
+	# x[::-1] reverses the order of x.
+	if person == person[::-1]:
+		print("The class contains a palindrome name: {}.".format(person) )
+		break
+else:
+	print( "The class contains no one with a palindrome name." )
+
+total = 0
+while total < 1000:
+	total += 23
+print(total)
