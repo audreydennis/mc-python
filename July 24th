@@ -1,0 +1,37 @@
+# shifting list of primes
+primes = [2, 3, 5, 7, 11, 13, 17, 19]
+shifted_primes = [x*100+x**2 for x in primes]
+print(shifted_primes)
+
+# sorting students in list
+students = [ ["Ethan", 12], ["Lizette", 19], ["Tara", 24], ["Oskar", 3] ]
+instructors = [ ["Mike", 97], ["Brian", 568] ]
+most_excersizes = [ person[0] for person in students if person[1] > 10]
+print(most_excersizes)
+
+#dictionaries
+audrey_info = {"name": "Audrey", "age": 17, "location": "Portland", "pet": "dog named festus"}
+print(audrey_info["pet"])
+
+attendance = {}
+attendance["number_theory"] = 23
+attendance["python"] = 17
+attendance["stats"] = 6
+attendance["combinatorics"] = 23
+print(attendance)
+
+# number baised on prime decomposition
+def number(decomp):
+  n=1
+  for prime in decomp.keys():
+    n *= prime ** decomp[prime]
+  return n
+print(number( {2: 3, 3: 1, 5: 1, 7: 1} ))
+
+prime_decomp = [2,2,2,3,3,5,7]
+number_primes = len( set(prime_decomp) )
+print( number_primes )
+
+found_primes = [47, 67, 41, 5, 71, 43, 73, 89, 31, 11, 73, 97, 41, 43, 13, 7, 47, 5, 5, 83, 19, 61, 23, 23, 3, 59, 2, 79, 29, 53, 29, 13, 79, 3, 17, 31, 19, 89, 83, 59, 37, 3, 2, 97, 71, 17, 2, 11, 7, 11, 7, 13, 61, 17, 37, 53, 67]
+primes = sorted(set(found_primes))
+print(primes)
