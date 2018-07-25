@@ -1,0 +1,35 @@
+names = ["Yana","John","Andrew","Tara","George","Maxim","Devanshu","Max","Vishnu","Adrien","Audrey","Sophia","Joy","Lizette","Oskar","Will","Ethan"]
+a_count = 0
+for name in names:
+  if name[0] == 'A':
+    a_count += 1
+print(a_count)
+
+
+def brute_mult_inverse(a,n):
+  """Solve ax = 1 mod n using brute force."""
+  for x in range(n):
+    if a*x%n == 1:
+      return x
+  return None
+
+print( brute_mult_inverse(94, 97) )
+
+
+import time
+start = time.time()
+
+n = 10000000
+
+# list
+for i in list(range(n)):
+  pass
+print( time.time() - start )
+
+# Iterators
+start = time.time()
+for i in range(n):
+  pass
+print( time.time() - start )
+
+print(sum([i**2 for i in range(100)]))
